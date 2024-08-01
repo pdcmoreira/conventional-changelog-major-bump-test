@@ -1,0 +1,1 @@
+# conventional-changelog-major-bump-test
