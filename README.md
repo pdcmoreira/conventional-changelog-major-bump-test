@@ -12,3 +12,5 @@ git tag -a v1.0.0 -m "Release v1.0.0"
 
 git push origin v1.0.0
 ```
+
+Now trying to add more stuff after the v1.0.0 release, to check if the workflow still working as expected.
