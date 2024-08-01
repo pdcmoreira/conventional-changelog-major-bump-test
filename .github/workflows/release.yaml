@@ -1,0 +1,22 @@
+name: Release
+run-name: Generate Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  generate-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: TriPSs/conventional-changelog-action@v4
+        with:
+          skip-on-empty: "false"
